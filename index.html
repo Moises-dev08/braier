@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Braier Propiedades</title>
+<link href="/css/site.css" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="header">
+<button aria-expanded="false" aria-label="Abrir menú" class="menu-btn" id="menuBtn"><span class="menu-lines"></span></button>
+<a aria-label="Braier Propiedades, volver al inicio" class="brand" href="#inicio">
+<span class="brand-wrap"><span class="brand-badge"><img alt="Braier Propiedades" class="brand-icon" src="/media/ui/logo.png"/></span>
+<span class="brand-copy"><span class="brand-name brand-title-single">BRAIER PROPIEDADES</span></span>
+</span>
+</a>
+<div class="header-space"></div>
+</header>
+<nav aria-label="Navegación principal" class="menu-panel" id="menuPanel">
+<a data-close="" href="#inicio">Inicio <span>→</span></a>
+<a data-close="" href="#destacadas">Propiedades <span>→</span></a>
+<button data-set-op="Venta">Venta <span>→</span></button>
+<button data-set-op="Alquiler">Alquiler <span>→</span></button>
+<button id="openTasacion">Tasación <span>→</span></button>
+<a data-close="" href="#about">Nosotros <span>→</span></a>
+<a data-close="" href="#contacto">Contacto <span>→</span></a>
+<button class="menu-close" id="menuClose">Cerrar <span>×</span></button>
+</nav>
+<main id="inicio">
+<section class="hero">
+<div class="hero-inner">
+<div aria-label="Tipos de propiedad" class="categories glass">
+<button aria-pressed="false" class="cat" data-type="Casas"><img alt="Casas" class="cat-photo" src="/media/ui/cat-casas.png"/><span>Casas</span></button>
+<button aria-pressed="false" class="cat" data-type="Departamentos"><img alt="Departamentos" class="cat-photo" src="/media/ui/cat-departamentos.png"/><span>Departamentos</span></button>
+<button aria-pressed="false" class="cat" data-type="Locales"><img alt="Locales" class="cat-photo" src="/media/ui/cat-locales.png"/><span>Locales</span></button>
+<button aria-pressed="false" class="cat" data-type="Terrenos"><img alt="Terrenos" class="cat-photo" src="/media/ui/cat-terrenos.png"/><span>Terrenos</span></button>
+<button aria-pressed="false" class="cat" data-type="Galpones"><img alt="Galpones" class="cat-photo" src="/media/ui/cat-galpones.png"/><span>Galpones</span></button>
+<button aria-pressed="false" class="cat" data-type="Predios"><img alt="Predios" class="cat-photo" src="/media/ui/cat-predios.png"/><span>Predios</span></button>
+</div>
+<div class="search-shell">
+<div class="search-panel">
+<div class="search-ops">
+<div aria-label="Operación" class="segmented">
+<button data-op="Venta">En venta</button>
+<button data-op="Alquiler">En alquiler</button>
+</div>
+</div>
+<div class="fields search-fields-simple">
+<div class="field">
+<label for="typeSelect">Tipo de propiedad</label>
+<select id="typeSelect">
+<option value="">Todos los tipos</option>
+<option>Casas</option><option>Departamentos</option><option>Locales</option>
+<option>Terrenos</option><option>Galpones</option><option>Predios</option>
+</select>
+</div>
+<button class="search-btn" id="searchBtn">Buscar</button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+<section class="section" id="destacadas">
+<div class="operation-panels" id="cards">
+<section class="operation-panel operation-panel-sales" data-operation-panel="sales" aria-label="Propiedades en venta">
+  <div class="operation-panel-head">
+    <div class="operation-panel-title">
+      <h3>Propiedades en venta</h3>
+    </div>
+    <span class="operation-count">9 propiedades</span>
+  </div>
+  <section class="property-type-group" id="venta-departamentos" data-property-type="Departamentos" aria-label="Departamentos en venta"><div class="property-type-head"><div class="property-type-title"><span class="property-type-kicker">TIPO DE PROPIEDAD</span><h4>Departamentos</h4></div><span class="property-type-count">3 propiedades</span></div><div class="operation-grid property-type-grid" data-operation="VENTA" data-property-type="Departamentos"><article class="card" data-card-op="Venta" data-card-type="Departamentos" data-property-id="depto-cofico-av-avellaneda">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Edificio del departamento con cochera en Cofico" src="/media/properties/depto-cofico-av-avellaneda-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">VENTA</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">USD 48.000</div><h3>Departamento 1 dormitorio con cochera · Cofico</h3><div class="location">Av. Avellaneda entre Bedoya y J. L. de Cabrera</div><div class="card-note">Expensas: $92.000 aprox. · Cesión de boleto</div><div class="meta"><span>1 dormitorio</span><span>1 baño</span><span>Balcón</span><span>Cochera incluida</span><span>Ascensor</span></div><button class="card-action" data-property-id="depto-cofico-av-avellaneda" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Venta" data-card-type="Departamentos" data-property-id="depto-alvear-53-centro">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Living comedor con piso de parquet del departamento en Alvear 53" src="/media/properties/depto-alvear-53-centro-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">VENTA</span><span class="badge badge-light">ALQUILADO</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">USD 52.000</div><h3>Departamento 1 dormitorio · Centro</h3><div class="location">Alvear 53 · A metros de Plaza San Martín</div><div class="card-note">Actualmente alquilado · Renta aprox. $490.000/mes</div><div class="meta"><span>1 dormitorio</span><span>1 baño</span><span>4° piso</span><span>Contrafrente</span><span>2 ascensores</span></div><button class="card-action" data-property-id="depto-alvear-53-centro" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Venta" data-card-type="Departamentos" data-property-id="depto-bv-san-juan-guemes">
+<div class="card-media"><img src="/media/properties/depto-bv-san-juan-guemes-1.jpg" alt="Interior del departamento en Bv. San Juan 737, con piso de parquet y barra desayunadora" loading="lazy"><div class="badges"><span class="badge">VENTA</span><span class="badge badge-light">ALQUILADO</span></div></div>
+<div class="card-body"><div class="price">USD 78.000</div><h3>Departamento 2 dormitorios · Zona Güemes</h3><div class="location">Bv. San Juan entre Artigas y Corro · Córdoba</div><div class="card-note">Alquilado · Renta mensual: $915.000</div><div class="meta"><span>65 m²</span><span>2 dormitorios</span><span>2° piso</span><span>Reciclado a nuevo</span><span>Escritura inmediata</span></div><button class="card-action" data-property-id="depto-bv-san-juan-guemes" type="button">Ver propiedad</button></div></article></div></section>
+<section class="property-type-group" id="venta-casas" data-property-type="Casas" aria-label="Casas en venta"><div class="property-type-head"><div class="property-type-title"><span class="property-type-kicker">TIPO DE PROPIEDAD</span><h4>Casas</h4></div><span class="property-type-count">4 propiedades</span></div><div class="operation-grid property-type-grid" data-operation="VENTA" data-property-type="Casas"><article class="card" data-card-op="Venta" data-card-type="Casas" data-property-id="duplex-solares-del-rio-rio-ceballos">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Vista aérea del Housing Solares del Río en Río Ceballos" src="/media/properties/duplex-solares-del-rio-rio-ceballos-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">VENTA</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">Consultar precio</div><h3>Dúplex 3 dormitorios · Río Ceballos</h3><div class="location">Housing Solares del Río · Zona Howard Johnson</div><div class="card-note">Escritura y planos aprobados · Expensas bajas</div><div class="meta"><span>3 dormitorios</span><span>2 baños</span><span>1 dorm. en PB</span><span>Quincho/cochera</span><span>Jardín privado</span></div><button class="card-action" data-property-id="duplex-solares-del-rio-rio-ceballos" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Venta" data-card-type="Casas" data-property-id="casa-lomas-del-zupay-unquillo">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Pileta y exterior de la casa en Lomas del Zupay, Unquillo" src="/media/properties/casa-lomas-del-zupay-unquillo-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">VENTA</span><span class="badge badge-light">ALQUILADA</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">USD 98.000</div><h3>Casa de diseño · Lomas del Zupay</h3><div class="location">Unquillo · Sierras Chicas · Córdoba</div><div class="card-note">Escritura y planos aprobados · Actualmente alquilada</div><div class="meta"><span>96 m² cubiertos</span><span>1.200 m² terreno</span><span>2 dormitorios</span><span>2 baños</span><span>Pileta</span></div><button class="card-action" data-property-id="casa-lomas-del-zupay-unquillo" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Venta" data-card-type="Casas" data-property-id="casa-punta-canada-quintas-de-los-nores">
+<div class="card-media"><img src="/media/properties/casa-punta-canada-quintas-de-los-nores-1.jpg" alt="Casa moderna en Housing Punta Cañada, Quintas de los Nores" loading="lazy"><div class="badges"><span class="badge">VENTA</span></div></div>
+<div class="card-body"><div class="price">Consultar precio</div><h3>Casa moderna · Housing Punta Cañada</h3><div class="location">Quintas de los Nores · Zona Sur · Córdoba</div><div class="card-note">Seguridad 24 h · Pileta de uso común</div><div class="meta"><span>350 m²</span><span>3 dormitorios</span><span>2 baños + toilette</span><span>Una planta</span><span>Galería con asador</span></div><button class="card-action" data-property-id="casa-punta-canada-quintas-de-los-nores" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Venta" data-card-type="Casas" data-property-id="casa-maipu-igarzabal-venta">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Fachada de la casa en venta de Barrio Maipú" src="/media/properties/casa-maipu-igarzabal-venta-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">VENTA</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">Consultar precio</div><h3>Casa en B° Maipú 1ª Sección</h3><div class="location">Igarzábal 2062 · Córdoba</div><div class="card-note">Escritura · Venta de contado</div><div class="meta"><span>3 dormitorios</span><span>4 baños</span><span>Cochera doble</span><span>Piso radiante</span><span>Patio y asador</span></div><button class="card-action" data-property-id="casa-maipu-igarzabal-venta" type="button">Ver propiedad</button></div></article></div></section>
+<section class="property-type-group" id="venta-terrenos" data-property-type="Terrenos" aria-label="Terrenos en venta"><div class="property-type-head"><div class="property-type-title"><span class="property-type-kicker">TIPO DE PROPIEDAD</span><h4>Terrenos</h4></div><span class="property-type-count">1 propiedad</span></div><div class="operation-grid property-type-grid" data-operation="VENTA" data-property-type="Terrenos"><article class="card" data-card-op="Venta" data-card-type="Terrenos" data-property-id="terreno-jardin-ingles-ii">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Vista aérea del terreno en Jardín Inglés II de Valle Escondido" src="/media/properties/terreno-jardin-ingles-ii-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">VENTA</span><span class="badge badge-light">LOTE EN ESQUINA</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">USD 168.000</div><h3>Terreno en Jardín Inglés II · Valle Escondido</h3><div class="location">Jardín Inglés Este · Manzana 2 · Lote en esquina</div><div class="card-note">Cesión de boleto · Pegado a la Reserva Natural</div><div class="meta"><span>829 m² aprox.</span><span>31 × 29 m</span><span>Lote en esquina</span><span>Servicios subterráneos</span></div><button class="card-action" data-property-id="terreno-jardin-ingles-ii" type="button">Ver propiedad</button></div></article></div></section>
+<section class="property-type-group" id="venta-predios" data-property-type="Predios" aria-label="Predios en venta"><div class="property-type-head"><div class="property-type-title"><span class="property-type-kicker">TIPO DE PROPIEDAD</span><h4>Predios</h4></div><span class="property-type-count">1 propiedad</span></div><div class="operation-grid property-type-grid" data-operation="VENTA" data-property-type="Predios"><article class="card" data-card-op="Venta Alquiler" data-card-type="Predios" data-property-id="predio-ohiggins"><div class="card-media"><div class="card-slider" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Predio comercial frente" src="/media/properties/predio-ohiggins-1.jpg"/></div><div class="card-slide"><img alt="Interior comercial" src="/media/properties/predio-ohiggins-2.jpg"/></div><div class="card-slide"><img alt="Vista adicional" src="/media/properties/predio-ohiggins-3.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button><button aria-label="Ir a foto 2" class="card-dot" data-dot="1" type="button"></button><button aria-label="Ir a foto 3" class="card-dot" data-dot="2" type="button"></button></div></div></div><div class="card-body"><div class="price">Consultar precio</div><h3>Predio comercial y logístico</h3><div class="location">Av. O’Higgins · Córdoba</div><div class="meta"><span>Predio</span><span>Uso comercial</span><span>Zona sur</span></div><button class="card-action" data-property-id="predio-ohiggins" type="button">Ver propiedad</button></div></article></div></section>
+</section>
+<section class="operation-panel operation-panel-rentals" data-operation-panel="rentals" aria-label="Propiedades en alquiler">
+  <div class="operation-panel-head">
+    <div class="operation-panel-title">
+      <h3>Propiedades en alquiler</h3>
+    </div>
+    <span class="operation-count">8 propiedades</span>
+  </div>
+  <section class="property-type-group" id="alquiler-departamentos" data-property-type="Departamentos" aria-label="Departamentos en alquiler"><div class="property-type-head"><div class="property-type-title"><span class="property-type-kicker">TIPO DE PROPIEDAD</span><h4>Departamentos</h4></div><span class="property-type-count">5 propiedades</span></div><div class="operation-grid property-type-grid" data-operation="ALQUILER" data-property-type="Departamentos"><article class="card" data-card-op="Alquiler" data-card-type="Departamentos" data-property-id="depto-alta-cordoba-isabel">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Cocina y estar del departamento en Alta Córdoba" src="/media/properties/depto-alta-cordoba-isabel-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">ALQUILER</span><span class="badge badge-light">DISPONIBLE FIN DE OCTUBRE</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">$570.000</div><h3>Departamento 1 dormitorio · Alta Córdoba</h3><div class="location">Isabel la Católica 852 · 2° piso frente</div><div class="card-note">Expensas: $135.000</div><div class="meta"><span>43 m²</span><span>1 dormitorio</span><span>1 baño</span><span>Balcón pasante</span></div><button class="card-action" data-property-id="depto-alta-cordoba-isabel" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Alquiler" data-card-type="Departamentos" data-property-id="depto-centro-galeria-la-merced">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Cocina integrada del departamento en Galería La Merced" src="/media/properties/depto-centro-galeria-la-merced-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">ALQUILER</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">$570.000</div><h3>Departamento apto vivienda u oficina · Centro</h3><div class="location">Galería La Merced · 25 de Mayo / Rivadavia 150</div><div class="card-note">Expensas: Consultar</div><div class="meta"><span>38 m²</span><span>1 dormitorio</span><span>1 baño</span><span>Piso 14</span><span>Vista panorámica</span></div><button class="card-action" data-property-id="depto-centro-galeria-la-merced" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Alquiler" data-card-type="Departamentos" data-property-id="depto-valle-tamar-52m2">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Interior del departamento de Valle Escondido con cocina integrada" src="/media/properties/depto-valle-tamar-52m2-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">ALQUILER</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">$720.000</div><h3>Departamento 1 dormitorio · Valle Escondido</h3><div class="location">Complejo Tamar · Av. Soldado Ramón A. Cabrera</div><div class="card-note">Expensas: $110.000 aprox.</div><div class="meta"><span>52 m²</span><span>1 dormitorio</span><span>1 baño en suite</span><span>1° piso con ascensor</span></div><button class="card-action" data-property-id="depto-valle-tamar-52m2" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Alquiler" data-card-type="Departamentos" data-property-id="duplex-loft-valle-tamar-38m2">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Cocina y escalera del dúplex en Complejo Tamar" src="/media/properties/duplex-loft-valle-tamar-38m2-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">ALQUILER</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">$680.000</div><h3>Dúplex 1 dormitorio · Complejo Tamar</h3><div class="location">Valle Escondido · Complejo Tamar</div><div class="card-note">Expensas: $105.000</div><div class="meta"><span>38 m²</span><span>2 plantas</span><span>1 dormitorio</span><span>1 baño</span><span>Estacionamiento</span></div><button class="card-action" data-property-id="duplex-loft-valle-tamar-38m2" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Alquiler" data-card-type="Departamentos" data-property-id="depto-valle-tamar-36m2">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Cocina y acceso al balcón del departamento en Complejo Tamar" src="/media/properties/depto-valle-tamar-36m2-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">ALQUILER</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">$700.000</div><h3>Departamento 1 dormitorio · Complejo Tamar</h3><div class="location">Valle Escondido · 2° piso · Complejo Tamar</div><div class="card-note">Expensas: $105.000 aprox.</div><div class="meta"><span>36 m²</span><span>1 dormitorio</span><span>1 baño</span><span>Caldera dual</span><span>Estacionamiento</span></div><button class="card-action" data-property-id="depto-valle-tamar-36m2" type="button">Ver propiedad</button></div></article></div></section>
+<section class="property-type-group" id="alquiler-casas" data-property-type="Casas" aria-label="Casas en alquiler"><div class="property-type-head"><div class="property-type-title"><span class="property-type-kicker">TIPO DE PROPIEDAD</span><h4>Casas</h4></div><span class="property-type-count">2 propiedades</span></div><div class="operation-grid property-type-grid" data-operation="ALQUILER" data-property-type="Casas"><article class="card" data-card-op="Alquiler" data-card-type="Casas" data-property-id="casa-maipu-igarzabal">
+<div class="card-media"><div class="card-slider" data-index="0"><div class="card-slides">
+<div class="card-slide"><img alt="Fachada frontal de la casa en B° Maipú" src="/media/properties/casa-maipu-igarzabal-1.jpg"/></div>
+<div class="card-slide"><img alt="Living con hogar a leña y pisos de madera" src="/media/properties/casa-maipu-igarzabal-2.jpg"/></div>
+<div class="card-slide"><img alt="Patio con asador y jardín" src="/media/properties/casa-maipu-igarzabal-3.jpg"/></div>
+</div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button><button aria-label="Ir a foto 2" class="card-dot" data-dot="1" type="button"></button><button aria-label="Ir a foto 3" class="card-dot" data-dot="2" type="button"></button></div></div><div class="badges"><span class="badge">ALQUILER</span></div><div class="counter">1 / 3</div></div>
+<div class="card-body"><div class="price">$1.400.000</div><h3>Casa en B° Maipú 1ª Sección</h3><div class="location">Igarzábal 2062 · Córdoba</div><div class="meta"><span>3 dormitorios</span><span>4 baños</span><span>Cochera doble</span></div><button class="card-action" data-property-id="casa-maipu-igarzabal" type="button">Ver propiedad</button></div></article>
+<article class="card" data-card-op="Alquiler" data-card-type="Casas" data-property-id="duplex-tamar-300m2">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Dúplex visto de frente en Complejo Tamar" src="/media/properties/duplex-tamar-300m2-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">ALQUILER</span><span class="badge badge-light">DISPONIBLE OCTUBRE</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">$1.600.000</div><h3>Dúplex 2 dormitorios · Complejo Tamar</h3><div class="location">Valle Escondido · Av. Intercountry / Soldado Ramón A. Cabrera</div><div class="card-note">Apto mascota · Disponible a partir de octubre</div><div class="meta"><span>≈300 m²</span><span>2 dormitorios</span><span>2 baños</span><span>2/3 vehículos</span><span>Galería con asador</span></div><button class="card-action" data-property-id="duplex-tamar-300m2" type="button">Ver propiedad</button></div></article></div></section>
+<section class="property-type-group" id="alquiler-locales" data-property-type="Locales" aria-label="Locales en alquiler"><div class="property-type-head"><div class="property-type-title"><span class="property-type-kicker">TIPO DE PROPIEDAD</span><h4>Locales</h4></div><span class="property-type-count">1 propiedad</span></div><div class="operation-grid property-type-grid" data-operation="ALQUILER" data-property-type="Locales"><article class="card" data-card-op="Alquiler" data-card-type="Locales" data-property-id="local-cofico-rodriguez-pena">
+<div class="card-media"><div class="card-slider single-photo" data-index="0"><div class="card-slides"><div class="card-slide"><img alt="Local comercial visto de frente en Cofico" src="/media/properties/local-cofico-rodriguez-pena-1.jpg"/></div></div><button aria-label="Foto anterior" class="card-nav card-prev" type="button">‹</button><button aria-label="Siguiente foto" class="card-nav card-next" type="button">›</button><div class="card-dots"><button aria-label="Ir a foto 1" class="card-dot active" data-dot="0" type="button"></button></div></div><div class="badges"><span class="badge">ALQUILER</span><span class="badge badge-light">ÚNICO DISPONIBLE</span></div><div class="counter">1 foto</div></div>
+<div class="card-body"><div class="price">$400.000</div><h3>Local comercial · Cofico</h3><div class="location">Rodríguez Peña entre Jerónimo Luis de Cabrera y Bedoya</div><div class="card-note">25 m² · No apto gastronómico</div><div class="meta"><span>1 baño</span><span>3,20 × 6 m</span><span>Vidriera con reja</span><span>Único disponible</span></div><button class="card-action" data-property-id="local-cofico-rodriguez-pena" type="button">Ver propiedad</button></div></article></div></section>
+</section>
+</div><div class="empty-state" id="emptyState" hidden>No hay propiedades cargadas para este filtro todavía.</div>
+<div class="owner-lead" id="captar-propiedad" aria-labelledby="ownerLeadTitle">
+  <div class="owner-lead-copy">
+    <span class="owner-lead-kicker">PARA PROPIETARIOS</span>
+    <h2 id="ownerLeadTitle">¿Tenés una propiedad para vender, alquilar o administrar?</h2>
+    <p>Te acompañamos con tasación, publicación, comercialización y administración tradicional o temporaria.</p>
+    <div class="owner-lead-services" aria-label="Servicios para propietarios">
+      <span>Tasaciones</span><span>Venta y alquiler</span><span>Administración tradicional</span><span>Administración temporaria</span>
+    </div>
+    <a class="owner-lead-whatsapp" href="https://wa.me/543515948375?text=Hola%20Braier%20Propiedades%2C%20quiero%20publicar%20una%20propiedad." rel="noopener" target="_blank"><img alt="" aria-hidden="true" class="owner-wa-icon" src="/media/ui/owner-wa.png"/><span class="owner-wa-label">Hablar por WhatsApp</span><span aria-hidden="true" class="owner-wa-arrow">→</span></a>
+  </div>
+  <form class="owner-lead-form" id="ownerLeadForm">
+    <div class="owner-lead-form-title">Contanos sobre tu propiedad</div>
+    <div class="owner-lead-fields">
+      <label>Nombre<input name="ownerName" required type="text" placeholder="Tu nombre" autocomplete="name"/></label>
+      <label>WhatsApp<input name="ownerPhone" required type="tel" placeholder="Tu número" autocomplete="tel"/></label>
+      <label>¿Qué necesitás?<select name="ownerOperation" required><option value="">Seleccionar</option><option>Vender</option><option>Alquilar</option><option>Administrar un alquiler tradicional</option><option>Administrar un alquiler temporario</option></select></label>
+      <label>Tipo de propiedad<select name="ownerType" required><option value="">Seleccionar</option><option>Casa</option><option>Departamento</option><option>Local comercial</option><option>Terreno</option><option>Galpón o predio</option><option>Otro</option></select></label>
+            <label class="owner-lead-wide">Mensaje<textarea name="ownerMessage" rows="3" placeholder="Contanos brevemente sobre la propiedad"></textarea></label>
+    </div>
+    <button class="owner-lead-submit" type="submit">Quiero publicar mi propiedad <span aria-hidden="true">→</span></button>
+    <small>Al enviar, se abrirá WhatsApp con la consulta preparada.</small>
+  </form>
+</div>
+</section>
+<section class="contact-wrap" id="contacto"><div class="contact"><div><h2>Hablemos de tu próxima propiedad.</h2><p>Venta, alquiler, administración y asesoramiento con atención cercana y criterio profesional.</p></div><div class="contact-box">
+<a class="contact-row" href="https://wa.me/543515948375?text=Hola%20Braier%20Propiedades%2C%20quisiera%20hacer%20una%20consulta." rel="noopener" target="_blank"><span class="social-icon is-whatsapp"><img alt="WhatsApp" class="social-app-icon" src="/media/ui/whatsapp.png"/></span><span class="social-meta"><small>WhatsApp</small><strong>+54 351 594 8375</strong></span><span class="social-arrow">→</span></a>
+<a class="contact-row" href="https://www.instagram.com/braier_propiedades/" rel="noopener" target="_blank"><span class="social-icon is-instagram"><img alt="Instagram" class="social-app-icon" src="/media/ui/instagram.png"/></span><span class="social-meta"><small>Instagram</small><strong>@braier_propiedades</strong></span><span class="social-arrow">→</span></a>
+<a class="contact-row" href="https://www.facebook.com/braierpropiedades" rel="noopener" target="_blank"><span class="social-icon is-facebook"><img alt="Facebook" class="social-app-icon" src="/media/ui/facebook.png"/></span><span class="social-meta"><small>Facebook</small><strong>Braier Propiedades</strong></span><span class="social-arrow">→</span></a>
+<a class="contact-row" href="https://www.youtube.com/@braierprop" rel="noopener" target="_blank"><span class="social-icon is-youtube"><img alt="YouTube" class="social-app-icon" src="/media/ui/youtube.png"/></span><span class="social-meta"><small>YouTube</small><strong>@braierprop</strong></span><span class="social-arrow">→</span></a>
+<a class="contact-row" href="https://www.tiktok.com/@braierprop" rel="noopener" target="_blank"><span class="social-icon is-tiktok"><img alt="TikTok" class="social-app-icon" src="/media/ui/tiktok.png"/></span><span class="social-meta"><small>TikTok</small><strong>@braierprop</strong></span><span class="social-arrow">→</span></a>
+</div></div></section><section class="about" id="about"><h2>Acerca de nosotros</h2><p>Braier Propiedades es una inmobiliaria familiar de Córdoba enfocada en acompañar cada operación con atención personalizada, comunicación clara y una mirada profesional sobre cada propiedad.</p></section>
+</main>
+<footer class="footer">Braier Propiedades · braierpropiedades.com · <a href="/admin/">Administrar</a></footer>
+<a aria-label="Consultar por WhatsApp" class="whatsapp" href="https://wa.me/543515948375?text=Hola%20Braier%20Propiedades%2C%20quisiera%20hacer%20una%20consulta." target="_blank"><img alt="WhatsApp" class="float-wa-img" src="/media/ui/float-wa.png"/></a>
+<div aria-labelledby="propertyTitle" aria-modal="true" class="modal-backdrop" id="propertyModal" role="dialog">
+<div class="modal property-modal"><button aria-label="Cerrar propiedad" class="property-modal-close" id="closeProperty" type="button">×</button><div id="propertyModalContent"></div></div>
+</div>
+<div aria-labelledby="tasacionTitle" aria-modal="true" class="modal-backdrop" id="tasacionModal" role="dialog">
+<div class="modal"><h3 id="tasacionTitle">Solicitá una tasación</h3><p>Contanos sobre tu propiedad y te contactamos para asesorarte.</p><div class="modal-grid"><div class="field"><label>Nombre y apellido</label><input placeholder="Tu nombre"/></div><div class="field"><label>Teléfono o WhatsApp</label><input placeholder="351…"/></div><div class="field"><label>Email opcional</label><input placeholder="nombre@email.com"/></div><div class="field"><label>Tipo de propiedad</label><select><option>Casa</option><option>Departamento</option><option>Local</option><option>Terreno</option><option>Galpón</option><option>Predio</option></select></div><div class="field"><label>Barrio o localidad</label><input placeholder="Ej. Cerro de las Rosas"/></div><div class="field"><label>Comentario opcional</label><input placeholder="Breve detalle"/></div></div><div class="modal-actions"><button class="secondary" id="closeTasacion">Cerrar</button><button class="primary" id="sendTasacion">Solicitar tasación</button></div></div>
+</div>
+
+
+<script src="/js/site.js"></script>
+</body>
+</html>

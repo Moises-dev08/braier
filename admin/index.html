@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Administrar propiedades · Braier</title>
+<link href="/admin/admin.css" rel="stylesheet"/>
+</head>
+<body>
+<main class="screen" id="loginView">
+  <form class="login" id="loginForm">
+    <img alt="" class="login-logo" src="/media/ui/logo.png"/>
+    <h1>Braier Propiedades</h1>
+    <p>Ingresá para cargar, editar u ocultar propiedades.</p>
+    <label>Email<input autocomplete="username" name="email" required type="email"/></label>
+    <label>Contraseña<input autocomplete="current-password" name="password" required type="password"/></label>
+    <p class="form-error" hidden id="loginError"></p>
+    <button type="submit">Entrar</button>
+  </form>
+</main>
+<main class="app" hidden id="appView">
+  <header class="top">
+    <div>
+      <strong>Propiedades</strong>
+      <span id="sessionEmail"></span>
+    </div>
+    <div class="top-actions">
+      <a href="/">Ver sitio</a>
+      <button id="newProperty" type="button">Nueva propiedad</button>
+      <button class="ghost" id="signOut" type="button">Salir</button>
+    </div>
+  </header>
+  <p class="banner" hidden id="banner"></p>
+  <div class="layout">
+    <section class="list" id="list"></section>
+    <form class="editor" hidden id="editor">
+      <div class="editor-head">
+        <h2 id="editorTitle">Nueva propiedad</h2>
+        <button class="ghost" id="closeEditor" type="button">Cerrar</button>
+      </div>
+      <label>Título en la tarjeta<input name="card_title" required/></label>
+      <label>Título del detalle<input name="title" required/></label>
+      <label>Operación
+        <select name="operation">
+          <option>Venta</option>
+          <option>Alquiler</option>
+          <option>Venta Alquiler</option>
+        </select>
+      </label>
+      <label>Tipo
+        <select name="property_type">
+          <option>Casas</option>
+          <option>Departamentos</option>
+          <option>Locales</option>
+          <option>Terrenos</option>
+          <option>Galpones</option>
+          <option>Predios</option>
+        </select>
+      </label>
+      <label>Ubicación<input name="location"/></label>
+      <label>Precio<input name="price_label" placeholder="USD 48.000"/></label>
+      <label>Teléfono<input name="phone"/></label>
+      <label>WhatsApp<input name="whatsapp" placeholder="543515948375"/></label>
+      <label>Nota corta<input name="note"/></label>
+      <label>Etiquetas extra<textarea name="badges" rows="2" placeholder="Una por línea. La operación se muestra sola."></textarea></label>
+      <label>Datos de la tarjeta<textarea name="meta" rows="4" placeholder="Una línea por dato: dormitorios, baños, cochera…"></textarea></label>
+      <label>Descripción<textarea name="description" rows="5"></textarea></label>
+      <label>Características<textarea name="features" rows="6" placeholder="Una por línea. Se ven al abrir la propiedad."></textarea></label>
+      <label>Condiciones<textarea name="contract" rows="2"></textarea></label>
+      <label class="check"><input name="published" type="checkbox"/> Publicada en el sitio</label>
+      <div class="photos-head">
+        <strong>Fotos</strong>
+        <label class="file-btn">Agregar fotos<input accept="image/*" hidden id="photoInput" multiple type="file"/></label>
+      </div>
+      <div id="photos"></div>
+      <p class="form-error" hidden id="editorError"></p>
+      <div class="editor-actions">
+        <button type="submit">Guardar</button>
+        <button class="danger" hidden id="deleteProperty" type="button">Eliminar</button>
+      </div>
+    </form>
+  </div>
+</main>
+<script src="/admin/admin.js" type="module"></script>
+</body>
+</html>

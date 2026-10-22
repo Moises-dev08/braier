@@ -1,0 +1,758 @@
+[
+  {
+    "id": "depto-cofico-av-avellaneda",
+    "card_title": "Departamento 1 dormitorio con cochera · Cofico",
+    "title": "Departamento en venta · 1 dormitorio con cochera · Cofico",
+    "location": "Av. Avellaneda entre Bedoya y José Luis de Cabrera · Córdoba",
+    "price_label": "USD 48.000",
+    "operation": "Venta",
+    "property_type": "Departamentos",
+    "note": "Expensas: $92.000 aprox. · Cesión de boleto",
+    "badges": [],
+    "meta": [
+      "1 dormitorio",
+      "1 baño",
+      "Balcón",
+      "Cochera incluida",
+      "Ascensor"
+    ],
+    "description": "Departamento a estrenar en Cofico, dentro de un moderno edificio de 7 pisos con ascensor automático y cocheras. Una oportunidad para inversión o vivienda en una zona residencial con excelente ubicación y conectividad.",
+    "features": [
+      "1 dormitorio con placard",
+      "Living comedor",
+      "Cocina",
+      "Balcón",
+      "1 baño completo",
+      "Cochera incluida",
+      "Edificio con ascensor",
+      "Expensas: $92.000 aprox.",
+      "Sin escritura · cesión de boleto"
+    ],
+    "contract": "Venta de contado al precio publicado · cesión de boleto de compraventa",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 0,
+    "images": [
+      {
+        "asset": 9,
+        "alt": "Edificio del departamento con cochera en Cofico",
+        "src": "/media/properties/depto-cofico-av-avellaneda-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "depto-alvear-53-centro",
+    "card_title": "Departamento 1 dormitorio · Centro",
+    "title": "Departamento en venta · 1 dormitorio · Centro",
+    "location": "Alvear 53, entre 25 de Mayo y Rosario de Santa Fe · Córdoba",
+    "price_label": "USD 52.000",
+    "operation": "Venta",
+    "property_type": "Departamentos",
+    "note": "Actualmente alquilado · Renta aprox. $490.000/mes",
+    "badges": [
+      "ALQUILADO"
+    ],
+    "meta": [
+      "1 dormitorio",
+      "1 baño",
+      "4° piso",
+      "Contrafrente",
+      "2 ascensores"
+    ],
+    "description": "Departamento amplio y muy luminoso, ubicado en cuarto piso contrafrente, a la vuelta de Plaza San Martín. Ideal para inversores por su renta vigente.",
+    "features": [
+      "1 dormitorio amplio con placard",
+      "1 baño completo de generosas dimensiones con placard empotrado",
+      "Cocina separada con lavadero",
+      "Living comedor con aire acondicionado y calefactor",
+      "Amplio pasillo de ingreso",
+      "4° piso · orientación contrafrente",
+      "Edificio con 2 ascensores",
+      "Todos los servicios conectados",
+      "Renta aprox.: $490.000 mensuales",
+      "Expensas: $105.000, más impuestos y servicios"
+    ],
+    "contract": "Actualmente alquilado · contrato vigente de 24 meses con ajuste trimestral por IPC",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 1,
+    "images": [
+      {
+        "asset": 10,
+        "alt": "Living comedor con piso de parquet del departamento en Alvear 53",
+        "src": "/media/properties/depto-alvear-53-centro-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "depto-bv-san-juan-guemes",
+    "card_title": "Departamento 2 dormitorios · Zona Güemes",
+    "title": "Departamento en venta · 2 dormitorios · Zona Güemes",
+    "location": "Bv. San Juan entre Artigas y Corro · Córdoba",
+    "price_label": "USD 78.000",
+    "operation": "Venta",
+    "property_type": "Departamentos",
+    "note": "Alquilado · Renta mensual: $915.000",
+    "badges": [
+      "ALQUILADO"
+    ],
+    "meta": [
+      "65 m²",
+      "2 dormitorios",
+      "2° piso",
+      "Reciclado a nuevo",
+      "Escritura inmediata"
+    ],
+    "description": "Departamento de 65 m² en segundo piso, contrafrente con orientación lateral a la calle, a solo 500 metros de Patio Olmos, junto a Nueva Córdoba y al Pasaje Peatonal Santo Tomás. Fue totalmente reciclado a nuevo y ofrece tranquilidad, luminosidad y ventilación.",
+    "features": [
+      "65 m²",
+      "2 dormitorios con interiores de placard",
+      "Amplio living comedor",
+      "Cocina Caledonia con barra desayunadora y gran guardado",
+      "1 baño completo con mampara",
+      "Cortinas roller en todas las aberturas",
+      "Iluminación LED",
+      "Segundo piso",
+      "Totalmente reciclado a nuevo",
+      "Actualmente alquilado · renta: $915.000 mensuales"
+    ],
+    "contract": "Escritura inmediata · actualmente alquilado",
+    "phone": "+54 351 650-3080",
+    "whatsapp": "543516503080",
+    "published": true,
+    "sort_order": 2,
+    "images": [
+      {
+        "asset": 11,
+        "alt": "Interior del departamento en Bv. San Juan 737, con piso de parquet y barra desayunadora",
+        "src": "/media/properties/depto-bv-san-juan-guemes-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "duplex-solares-del-rio-rio-ceballos",
+    "card_title": "Dúplex 3 dormitorios · Río Ceballos",
+    "title": "Dúplex en venta · 3 dormitorios · Río Ceballos",
+    "location": "Housing Solares del Río · Dr. Bregante y Costanera · Río Ceballos",
+    "price_label": "Consultar precio",
+    "operation": "Venta",
+    "property_type": "Casas",
+    "note": "Escritura y planos aprobados · Expensas bajas",
+    "badges": [],
+    "meta": [
+      "3 dormitorios",
+      "2 baños",
+      "1 dorm. en PB",
+      "Quincho/cochera",
+      "Jardín privado"
+    ],
+    "description": "Dúplex de 3 dormitorios dentro del exclusivo Housing Solares del Río, un complejo cerrado a metros del Hotel Howard Johnson y de Av. San Martín. Combina seguridad, naturaleza y confort en un barrio de solo 18 viviendas.",
+    "features": [
+      "3 dormitorios, uno en planta baja",
+      "2 baños completos, uno en suite",
+      "Living comedor con salamandra",
+      "Gran cocina comedor",
+      "Calefactores en ambas plantas",
+      "Quincho/cochera cerrada con asador",
+      "Jardín privado con asador y vista a la costanera y arroyo",
+      "Ladrillo visto, techos de madera con tejas",
+      "Cerco perimetral y portón automático",
+      "Expensas bajas",
+      "Gas envasado y disponibilidad de conexión a gas natural"
+    ],
+    "contract": "Escritura y planos aprobados",
+    "phone": "+54 351 650-3080",
+    "whatsapp": "543516503080",
+    "published": true,
+    "sort_order": 3,
+    "images": [
+      {
+        "asset": 12,
+        "alt": "Vista aérea del Housing Solares del Río en Río Ceballos",
+        "src": "/media/properties/duplex-solares-del-rio-rio-ceballos-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "casa-lomas-del-zupay-unquillo",
+    "card_title": "Casa de diseño · Lomas del Zupay",
+    "title": "Casa de diseño en venta · Lomas del Zupay · Unquillo",
+    "location": "Lomas del Zupay · Unquillo · Sierras Chicas · Córdoba",
+    "price_label": "USD 98.000",
+    "operation": "Venta",
+    "property_type": "Casas",
+    "note": "Escritura y planos aprobados · Actualmente alquilada",
+    "badges": [
+      "ALQUILADA"
+    ],
+    "meta": [
+      "96 m² cubiertos",
+      "1.200 m² terreno",
+      "2 dormitorios",
+      "2 baños",
+      "Pileta"
+    ],
+    "description": "Propiedad de diseño vanguardista desarrollada en medios niveles, dentro de un predio cerrado de solo 4 viviendas. Se destaca por su luminosidad, su techo vidriado sobre la caja de escalera y sus amplios espacios exteriores con galería, deck, patio y pileta.",
+    "features": [
+      "96 m² cubiertos, sin contabilizar deck ni pileta",
+      "1.200 m² de terreno",
+      "2 dormitorios, principal en suite",
+      "2 baños completos",
+      "Baño en suite con hidromasaje",
+      "Estar comedor y cocina integrada",
+      "Galería de 8 × 4 m con asador",
+      "Deck exterior, pileta y patio",
+      "Salamandra y 2 equipos de aire acondicionado split",
+      "Cochera",
+      "Ubicación lateral al arroyo",
+      "Predio cerrado con portón automático"
+    ],
+    "contract": "Escritura y planos aprobados · actualmente alquilada",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 4,
+    "images": [
+      {
+        "asset": 13,
+        "alt": "Pileta y exterior de la casa en Lomas del Zupay, Unquillo",
+        "src": "/media/properties/casa-lomas-del-zupay-unquillo-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "casa-punta-canada-quintas-de-los-nores",
+    "card_title": "Casa moderna · Housing Punta Cañada",
+    "title": "Casa moderna en venta · Housing Punta Cañada",
+    "location": "Quintas de los Nores · Zona Sur · Córdoba Capital",
+    "price_label": "Consultar precio",
+    "operation": "Venta",
+    "property_type": "Casas",
+    "note": "Seguridad 24 h · Pileta de uso común",
+    "badges": [],
+    "meta": [
+      "350 m²",
+      "3 dormitorios",
+      "2 baños + toilette",
+      "Una planta",
+      "Galería con asador"
+    ],
+    "description": "Casa de diseño contemporáneo dentro de Housing Punta Cañada, en el predio de Quintas de los Nores, próximo a Manantiales. Está desarrollada íntegramente en una planta, con ambientes amplios, excelente iluminación natural y una distribución funcional.",
+    "features": [
+      "350 m² de superficie total",
+      "Construcción moderna de aproximadamente 3 años",
+      "Distribuida en una sola planta",
+      "3 dormitorios, principal con vestidor",
+      "2 baños completos y toilette",
+      "Living comedor luminoso",
+      "Cocina semiintegrada totalmente equipada",
+      "Galería con asador y jardín privado",
+      "Cochera con pérgola",
+      "Aires acondicionados split frío/calor y cortinas roller",
+      "Guardia de ingreso 24 horas, portón automático y pileta común"
+    ],
+    "contract": "Consultar condiciones de venta",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 5,
+    "images": [
+      {
+        "asset": 14,
+        "alt": "Casa moderna en Housing Punta Cañada, Quintas de los Nores",
+        "src": "/media/properties/casa-punta-canada-quintas-de-los-nores-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "casa-maipu-igarzabal-venta",
+    "card_title": "Casa en B° Maipú 1ª Sección",
+    "title": "Casa en venta · B° Maipú 1ª Sección",
+    "location": "Igarzábal 2062 · Córdoba",
+    "price_label": "Consultar precio",
+    "operation": "Venta",
+    "property_type": "Casas",
+    "note": "Escritura · Venta de contado",
+    "badges": [],
+    "meta": [
+      "3 dormitorios",
+      "4 baños",
+      "Cochera doble",
+      "Piso radiante",
+      "Patio y asador"
+    ],
+    "description": "Imponente propiedad ubicada a metros de Av. Sabattini, con conexión rápida hacia Circunvalación y excelentes accesos a Parque Sarmiento, Nueva Córdoba, General Paz, Hospital San Roque, Terminal y el centro de la ciudad. Cuenta con excelente calidad constructiva, muy buena distribución, amplios ambientes, calefacción por piso radiante mediante caldera y pisos de madera entablonada.",
+    "features": [
+      "3 dormitorios con placares",
+      "Dormitorio principal en suite y con terraza",
+      "4 baños en total",
+      "Cochera doble con portón automático",
+      "Living con hogar a leña y balcón",
+      "Patio, jardín y asador con mesada y bacha",
+      "Cocina equipada con anafe, horno, muebles y campana",
+      "Terraza con excelente vista hacia la ciudad",
+      "Habitación de servicio con baño",
+      "Baulera y habitación guardaherramientas"
+    ],
+    "contract": "Escritura · venta de contado",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 6,
+    "images": [
+      {
+        "asset": 15,
+        "alt": "Fachada de la casa en venta de Barrio Maipú",
+        "src": "/media/properties/casa-maipu-igarzabal-venta-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "terreno-jardin-ingles-ii",
+    "card_title": "Terreno en Jardín Inglés II · Valle Escondido",
+    "title": "Terreno en venta · Jardín Inglés II · Valle Escondido",
+    "location": "Jardín Inglés Este · Manzana 2 · Lote en esquina · Valle Escondido",
+    "price_label": "USD 168.000",
+    "operation": "Venta",
+    "property_type": "Terrenos",
+    "note": "Cesión de boleto · Pegado a la Reserva Natural",
+    "badges": [
+      "LOTE EN ESQUINA"
+    ],
+    "meta": [
+      "829 m² aprox.",
+      "31 × 29 m",
+      "Lote en esquina",
+      "Servicios subterráneos"
+    ],
+    "description": "Terreno en esquina de aproximadamente 829 m², rodeado de naturaleza y con excelente conectividad. Se ubica entre Piana y Jardín Inglés I, pegado a la Reserva Natural del Parque San Martín. El fondo del lote da a Av. Parque, con rápido acceso desde la última rotonda de Av. Parque de Valle Escondido.",
+    "features": [
+      "Manzana 2 · lote en esquina",
+      "31 × 29 metros · 829 m² aprox.",
+      "Pegado a la Reserva Natural del Parque San Martín",
+      "Fondo con salida a Av. Parque",
+      "Calles e infraestructura terminadas",
+      "Servicios subterráneos y alumbrado público",
+      "Barrio con doble cerco perimetral y medidas de seguridad",
+      "Guardia de ingreso",
+      "Transporte público a pocos metros"
+    ],
+    "contract": "Modalidad de venta: cesión de boleto",
+    "phone": "+54 351 650-3080",
+    "whatsapp": "543516503080",
+    "published": true,
+    "sort_order": 7,
+    "images": [
+      {
+        "asset": 16,
+        "alt": "Vista aérea del terreno en Jardín Inglés II de Valle Escondido",
+        "src": "/media/properties/terreno-jardin-ingles-ii-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "predio-ohiggins",
+    "card_title": "Predio comercial y logístico",
+    "title": "Predio comercial y logístico",
+    "location": "Av. O’Higgins · Córdoba",
+    "price_label": "Consultar precio",
+    "operation": "Venta Alquiler",
+    "property_type": "Predios",
+    "note": "",
+    "badges": [],
+    "meta": [
+      "Predio",
+      "Uso comercial",
+      "Zona sur"
+    ],
+    "description": "Consultanos para recibir más información sobre esta propiedad.",
+    "features": [
+      "Predio",
+      "Uso comercial",
+      "Zona sur"
+    ],
+    "contract": "",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 8,
+    "images": [
+      {
+        "asset": 17,
+        "alt": "Predio comercial frente",
+        "src": "/media/properties/predio-ohiggins-1.jpg"
+      },
+      {
+        "asset": 18,
+        "alt": "Interior comercial",
+        "src": "/media/properties/predio-ohiggins-2.jpg"
+      },
+      {
+        "asset": 19,
+        "alt": "Vista adicional",
+        "src": "/media/properties/predio-ohiggins-3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "depto-alta-cordoba-isabel",
+    "card_title": "Departamento 1 dormitorio · Alta Córdoba",
+    "title": "Departamento en alquiler · Alta Córdoba",
+    "location": "Isabel la Católica 852 · Alta Córdoba",
+    "price_label": "$570.000",
+    "operation": "Alquiler",
+    "property_type": "Departamentos",
+    "note": "Expensas: $135.000",
+    "badges": [
+      "DISPONIBLE FIN DE OCTUBRE"
+    ],
+    "meta": [
+      "43 m²",
+      "1 dormitorio",
+      "1 baño",
+      "Balcón pasante"
+    ],
+    "description": "Moderno departamento de 1 dormitorio ubicado a 150 metros de la plaza de Alta Córdoba, en pleno centro comercial del barrio. Se encuentra en un segundo piso frente, con pisos de porcelanato, muy buena ventilación e iluminación natural y gran balcón pasante. Cuenta con gas natural, edificio cableado con fibra óptica y servicio de internet de máxima velocidad. EPEC solicita cambio de titularidad al inquilino.",
+    "features": [
+      "43 m² de superficie total",
+      "1 dormitorio con ropero",
+      "1 baño completo",
+      "2° piso frente",
+      "Gran balcón pasante",
+      "Estar comedor con cocina integrada",
+      "Gas natural",
+      "Expensas: $135.000",
+      "Fibra óptica en el edificio"
+    ],
+    "contract": "Disponible fin de octubre · contrato y requisitos: consultar",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 9,
+    "images": [
+      {
+        "asset": 20,
+        "alt": "Cocina y estar del departamento en Alta Córdoba",
+        "src": "/media/properties/depto-alta-cordoba-isabel-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "depto-centro-galeria-la-merced",
+    "card_title": "Departamento apto vivienda u oficina · Centro",
+    "title": "Departamento apto vivienda u oficina · Centro",
+    "location": "Galería La Merced · Peatonal 25 de Mayo / Rivadavia 150 · Córdoba",
+    "price_label": "$570.000",
+    "operation": "Alquiler",
+    "property_type": "Departamentos",
+    "note": "Expensas: Consultar",
+    "badges": [],
+    "meta": [
+      "38 m²",
+      "1 dormitorio",
+      "1 baño",
+      "Piso 14",
+      "Vista panorámica"
+    ],
+    "description": "Departamento ubicado en el piso 14 de la Galería La Merced, en pleno microcentro de Córdoba y a pocos metros de Plaza San Martín. Ofrece una espectacular vista panorámica de la ciudad, la Catedral y la plaza. Es apto para vivienda, oficina o consultorio profesional, con luminosidad, tranquilidad y amplios ventanales.",
+    "features": [
+      "38 m² de superficie total",
+      "1 dormitorio con placard",
+      "1 baño completo",
+      "Living comedor con cocina integrada",
+      "Amplios ventanales en ambos ambientes",
+      "Vista panorámica a la ciudad, Catedral y Plaza San Martín",
+      "Gas natural",
+      "Seguridad las 24 horas",
+      "3 ascensores",
+      "Cochera opcional en el edificio",
+      "Expensas: consultar"
+    ],
+    "contract": "Contrato de 24 meses · actualización trimestral por IPC",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 10,
+    "images": [
+      {
+        "asset": 21,
+        "alt": "Cocina integrada del departamento en Galería La Merced",
+        "src": "/media/properties/depto-centro-galeria-la-merced-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "depto-valle-tamar-52m2",
+    "card_title": "Departamento 1 dormitorio · Valle Escondido",
+    "title": "Departamento en alquiler · Valle Escondido",
+    "location": "Complejo Tamar · Av. Soldado Ramón A. Cabrera · Valle Escondido · Córdoba",
+    "price_label": "$720.000",
+    "operation": "Alquiler",
+    "property_type": "Departamentos",
+    "note": "Expensas: $110.000 aprox.",
+    "badges": [],
+    "meta": [
+      "52 m²",
+      "1 dormitorio",
+      "1 baño en suite",
+      "1° piso con ascensor"
+    ],
+    "description": "Departamento moderno, amplio y luminoso, ubicado en primer piso con ascensor, sobre Av. Soldado Ramón A. Cabrera, a solo 250 metros de Hola Valle y Valle Mall. Cuenta con una distribución funcional y excelentes terminaciones.",
+    "features": [
+      "52 m² de superficie total",
+      "1 dormitorio amplio con placard",
+      "1 baño completo en suite",
+      "Living comedor con cocina semiintegrada",
+      "Cocina equipada con amoblamiento completo",
+      "Aire acondicionado split",
+      "Calefacción central por radiadores y caldera dual",
+      "Pisos de porcelanato",
+      "Terraza común con asador y vistas a las sierras",
+      "Ascensor y cámaras de seguridad",
+      "Estacionamiento descubierto de uso común",
+      "Expensas: $110.000 aprox."
+    ],
+    "contract": "Contrato por 24 meses · actualización trimestral por IPC",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 11,
+    "images": [
+      {
+        "asset": 22,
+        "alt": "Interior del departamento de Valle Escondido con cocina integrada",
+        "src": "/media/properties/depto-valle-tamar-52m2-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "duplex-loft-valle-tamar-38m2",
+    "card_title": "Dúplex 1 dormitorio · Complejo Tamar",
+    "title": "Dúplex en alquiler · Valle Escondido · Complejo Tamar",
+    "location": "Complejo Tamar · Valle Escondido · Córdoba",
+    "price_label": "$680.000",
+    "operation": "Alquiler",
+    "property_type": "Departamentos",
+    "note": "Expensas: $105.000",
+    "badges": [],
+    "meta": [
+      "38 m²",
+      "2 plantas",
+      "1 dormitorio",
+      "1 baño",
+      "Estacionamiento"
+    ],
+    "description": "Moderno mini-loft tipo dúplex de 1 dormitorio, ubicado en Complejo Tamar, a solo 250 metros de Valle Mall y Hola Valle, con excelentes accesos hacia Circunvalación y zona norte.",
+    "features": [
+      "38 m² totales",
+      "Distribuido en 2 plantas",
+      "Cocina comedor en planta baja",
+      "1 dormitorio en planta alta",
+      "1 baño",
+      "Placares y mobiliario de cocina",
+      "Aire acondicionado frío/calor",
+      "Caldera dual Peisa",
+      "Estacionamiento descubierto y ascensor",
+      "Terraza común con asador y vistas",
+      "Expensas: $105.000"
+    ],
+    "contract": "Contrato por 24 meses · ajuste trimestral por IPC",
+    "phone": "+54 3515-948375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 12,
+    "images": [
+      {
+        "asset": 23,
+        "alt": "Cocina y escalera del dúplex en Complejo Tamar",
+        "src": "/media/properties/duplex-loft-valle-tamar-38m2-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "depto-valle-tamar-36m2",
+    "card_title": "Departamento 1 dormitorio · Complejo Tamar",
+    "title": "Departamento en alquiler · Valle Escondido · Complejo Tamar",
+    "location": "Complejo Tamar · Valle Escondido · Córdoba",
+    "price_label": "$700.000",
+    "operation": "Alquiler",
+    "property_type": "Departamentos",
+    "note": "Expensas: $105.000 aprox.",
+    "badges": [],
+    "meta": [
+      "36 m²",
+      "1 dormitorio",
+      "1 baño",
+      "Caldera dual",
+      "Estacionamiento"
+    ],
+    "description": "Departamento de 1 dormitorio ubicado en segundo piso del Complejo Tamar, sobre Av. Soldado Ramón A. Cabrera, a solo 250 metros de Hola Valle y junto al ingreso a Las Terrazas. Es luminoso, ventilado y se encuentra en excelente estado.",
+    "features": [
+      "36 m² totales",
+      "1 dormitorio con placard de pared a pared",
+      "Living comedor con cocina integrada",
+      "Cocina equipada con amoblamiento completo",
+      "Espacio para heladera y lavarropas",
+      "1 baño completo",
+      "Caldera dual Peisa y calefacción central",
+      "Ascensor y estacionamiento descubierto",
+      "Cámaras de vigilancia",
+      "Terraza común, asador, solárium y vista a las sierras",
+      "Expensas: $105.000 aprox."
+    ],
+    "contract": "Contrato por 24 meses · ajuste trimestral por IPC",
+    "phone": "+54 351 594 8375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 13,
+    "images": [
+      {
+        "asset": 24,
+        "alt": "Cocina y acceso al balcón del departamento en Complejo Tamar",
+        "src": "/media/properties/depto-valle-tamar-36m2-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "casa-maipu-igarzabal",
+    "card_title": "Casa en B° Maipú 1ª Sección",
+    "title": "Casa en alquiler · B° Maipú 1ª Sección",
+    "location": "Igarzábal 2062 · Córdoba",
+    "price_label": "$1.400.000",
+    "operation": "Alquiler",
+    "property_type": "Casas",
+    "note": "",
+    "badges": [],
+    "meta": [
+      "3 dormitorios",
+      "4 baños",
+      "Cochera doble"
+    ],
+    "description": "Imponente propiedad ubicada a metros de Av. Sabattini, con conexión rápida hacia Circunvalación y excelentes accesos a Parque Sarmiento, Nueva Córdoba, General Paz, Hospital San Roque, Terminal y el centro de la ciudad. Cuenta con excelente calidad constructiva, muy buena distribución, amplios ambientes, calefacción por piso radiante mediante caldera y pisos de madera entablonada.",
+    "features": [
+      "3 dormitorios con placares",
+      "Dormitorio principal en suite y con terraza",
+      "4 baños en total",
+      "Cochera doble con portón automático",
+      "Living con hogar a leña y balcón",
+      "Patio, jardín y asador con mesada y bacha",
+      "Cocina equipada con anafe, horno, muebles y campana",
+      "Terraza con excelente vista hacia la ciudad",
+      "Habitación de servicio con baño",
+      "Baulera y habitación guardaherramientas"
+    ],
+    "contract": "Contrato de 24 meses · ajuste trimestral por IPC",
+    "phone": "+54 3515-948375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 14,
+    "images": [
+      {
+        "asset": 25,
+        "alt": "Fachada frontal de la casa en B° Maipú",
+        "src": "/media/properties/casa-maipu-igarzabal-1.jpg"
+      },
+      {
+        "asset": 26,
+        "alt": "Living con hogar a leña y pisos de madera",
+        "src": "/media/properties/casa-maipu-igarzabal-2.jpg"
+      },
+      {
+        "asset": 27,
+        "alt": "Patio con asador y jardín",
+        "src": "/media/properties/casa-maipu-igarzabal-3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "duplex-tamar-300m2",
+    "card_title": "Dúplex 2 dormitorios · Complejo Tamar",
+    "title": "Dúplex en alquiler · 2 dormitorios · Complejo Tamar",
+    "location": "Av. Intercountry / Soldado Ramón A. Cabrera · Valle Escondido · Córdoba",
+    "price_label": "$1.600.000",
+    "operation": "Alquiler",
+    "property_type": "Casas",
+    "note": "Apto mascota · Disponible a partir de octubre",
+    "badges": [
+      "DISPONIBLE OCTUBRE"
+    ],
+    "meta": [
+      "≈300 m²",
+      "2 dormitorios",
+      "2 baños",
+      "2/3 vehículos",
+      "Galería con asador"
+    ],
+    "description": "Excelente dúplex en Complejo Tamar, entre el ingreso a Las Terrazas y Hola Valle, a solo 250 metros de Valle Mall. Una propiedad amplia, con ambientes cómodos y un gran espacio exterior al frente, en una zona tranquila, segura y con excelentes accesos.",
+    "features": [
+      "Aproximadamente 300 m² totales",
+      "2 dormitorios amplios con placares de pared a pared",
+      "2 baños completos",
+      "Gran living comedor",
+      "Amplia cocina comedor con modernos amoblamientos",
+      "Gran patio al frente de aproximadamente 16 m de ancho",
+      "Espacio para 2 o 3 vehículos",
+      "Galería con asador",
+      "Cámaras de seguridad",
+      "Expensas bajas",
+      "Apto mascota",
+      "Disponible a partir de octubre"
+    ],
+    "contract": "Contrato por 24 meses · ajuste trimestral por IPC",
+    "phone": "+54 3515-948375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 15,
+    "images": [
+      {
+        "asset": 28,
+        "alt": "Dúplex visto de frente en Complejo Tamar",
+        "src": "/media/properties/duplex-tamar-300m2-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "local-cofico-rodriguez-pena",
+    "card_title": "Local comercial · Cofico",
+    "title": "Local comercial en alquiler · Cofico",
+    "location": "Rodríguez Peña entre Jerónimo Luis de Cabrera y Bedoya · Córdoba",
+    "price_label": "$400.000",
+    "operation": "Alquiler",
+    "property_type": "Locales",
+    "note": "25 m² · No apto gastronómico",
+    "badges": [
+      "ÚNICO DISPONIBLE"
+    ],
+    "meta": [
+      "1 baño",
+      "3,20 × 6 m",
+      "Vidriera con reja",
+      "Único disponible"
+    ],
+    "description": "Excelente oportunidad sobre Rodríguez Peña, entre Jerónimo Luis de Cabrera y Bedoya, a solo 20 metros de Bedoya. Ubicado en una zona de gran circulación, en el límite entre Cofico y Alta Córdoba, a metros de una escuela. Ideal para oficina, kiosco, comercio, showroom y otros rubros. No apto gastronómico.",
+    "features": [
+      "25 m² totales",
+      "Salón de 3,20 m de ancho × 6 m de fondo",
+      "1 baño",
+      "Vidriera de cristal templado con reja",
+      "Único de los dos locales disponible",
+      "A metros de una escuela",
+      "Ideal para oficina, kiosco, comercio o showroom",
+      "No apto gastronómico"
+    ],
+    "contract": "Consultar condiciones de reserva",
+    "phone": "+54 3515-948375",
+    "whatsapp": "543515948375",
+    "published": true,
+    "sort_order": 16,
+    "images": [
+      {
+        "asset": 29,
+        "alt": "Local comercial visto de frente en Cofico",
+        "src": "/media/properties/local-cofico-rodriguez-pena-1.jpg"
+      }
+    ]
+  }
+]
