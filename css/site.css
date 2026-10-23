@@ -94,7 +94,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .whatsapp svg{width:28px;height:28px;fill:currentColor}
 .modal-backdrop{position:fixed;inset:0;z-index:90;background:rgba(15,27,33,.38);backdrop-filter:blur(8px);display:none;place-items:center;padding:18px}
 .modal-backdrop.open{display:grid}
-.modal{width:min(580px,100%);background:rgba(250,252,253,.92);border:1px solid rgba(255,255,255,.92);border-radius:28px;padding:22px;box-shadow:0 28px 90px rgba(16,47,61,.27)}
+.modal{width:min(580px,100%);max-height:calc(100vh - 36px);overflow:auto;background:rgba(250,252,253,.92);border:1px solid rgba(255,255,255,.92);border-radius:28px;padding:22px;box-shadow:0 28px 90px rgba(16,47,61,.27)}
 .modal h3{margin:2px 0 5px;font-size:30px;color:var(--petrol-2)}
 .modal p{margin:0 0 18px;color:var(--mid)}
 .modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -975,4 +975,5 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 
 [hidden]{display:none!important}
 h1.brand-title-single{margin:0}
+.tasacion-error{color:#9d2c2c;font-weight:650;margin:12px 0 0}
 .footer a{color:#143F53;font-weight:750;text-decoration:none}

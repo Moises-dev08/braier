@@ -316,4 +316,19 @@ document.getElementById("deleteProperty").addEventListener("click", async () => 
   await loadProperties();
 });
 
+const appraisalsEl = document.getElementById("appraisals");
+document.getElementById("showAppraisals").addEventListener("click", async () => {
+  if (!appraisalsEl.hidden) {
+    appraisalsEl.hidden = true;
+    return;
+  }
+  const { data, error } = await supabase.from("braier_appraisals").select("full_name, phone, email, property_type, location, comment, created_at").order("created_at", { ascending: false });
+  appraisalsEl.hidden = false;
+  if (error) {
+    appraisalsEl.innerHTML = `<p class="form-error">${escapeHtml(error.message)}</p>`;
+    return;
+  }
+  appraisalsEl.innerHTML = (data || []).map((item) => `<article class="appraisal"><strong>${escapeHtml(item.full_name)} · ${escapeHtml(item.phone)}</strong><p>${escapeHtml(item.property_type)}${item.location ? " · " + escapeHtml(item.location) : ""}${item.email ? " · " + escapeHtml(item.email) : ""}</p>${item.comment ? `<p>${escapeHtml(item.comment)}</p>` : ""}</article>`).join("") || "<p class='hint'>Todavía no hay pedidos de tasación.</p>";
+});
+
 requireAdmin().then((user) => { if (user) showApp(user); });

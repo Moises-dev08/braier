@@ -19,8 +19,41 @@ function filterCards(){document.querySelectorAll('.card').forEach(card=>{const o
 document.getElementById('searchBtn').addEventListener('click',()=>{filterCards();const target=activeType?[...document.querySelectorAll('.property-type-group')].find(group=>group.dataset.propertyType===activeType&&group.style.display!=='none'):null;(target||document.getElementById('destacadas')).scrollIntoView({behavior:'smooth'})});
 setActiveOp('Ambas');
 const viewAll=document.getElementById('viewAll');if(viewAll)viewAll.addEventListener('click',()=>{activeType='';activeOp='Ambas';filterCards();window.scrollTo({top:document.getElementById('destacadas').offsetTop-60,behavior:'smooth'})});
-const modal=document.getElementById('tasacionModal');function openModal(){modal.classList.add('open');setMenu(false);setTimeout(()=>modal.querySelector('input').focus(),100)}function closeModal(){modal.classList.remove('open')}
-document.getElementById('openTasacion').addEventListener('click',openModal);document.getElementById('closeTasacion').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.getElementById('sendTasacion').addEventListener('click',e=>{e.currentTarget.textContent='Solicitud preparada ✓';e.currentTarget.disabled=true;setTimeout(()=>{e.currentTarget.textContent='Solicitar tasación';e.currentTarget.disabled=false},1800)});
+const modal=document.getElementById('tasacionModal');
+const tasacionForm=document.getElementById('tasacionForm');
+const sendTasacion=document.getElementById('sendTasacion');
+const tasacionError=document.getElementById('tasacionError');
+function resetTasacion(){tasacionForm.reset();sendTasacion.disabled=false;sendTasacion.textContent='Solicitar tasación';tasacionError.hidden=true;tasacionError.textContent=''}
+function openModal(){modal.classList.add('open');setMenu(false);setTimeout(()=>modal.querySelector('input').focus(),100)}
+function closeModal(){modal.classList.remove('open');resetTasacion()}
+document.getElementById('openTasacion').addEventListener('click',openModal);
+document.getElementById('closeTasacion').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+tasacionForm.addEventListener('submit',async(event)=>{
+  event.preventDefault();
+  const data=new FormData(tasacionForm);
+  const fullName=String(data.get('full_name')||'').trim();
+  const phone=String(data.get('phone')||'').trim();
+  const email=String(data.get('email')||'').trim();
+  if(fullName.length<2||phone.length<6){tasacionError.hidden=false;tasacionError.textContent='Completá nombre y teléfono.';return}
+  sendTasacion.disabled=true;
+  sendTasacion.textContent='Enviando…';
+  tasacionError.hidden=true;
+  try{
+    const {createClient}=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.8/+esm');
+    const {SUPABASE_URL,SUPABASE_KEY}=await import('./config.js');
+    const supabase=createClient(SUPABASE_URL,SUPABASE_KEY);
+    const {error}=await supabase.from('braier_appraisals').insert({full_name:fullName,phone,email,property_type:String(data.get('property_type')||'Casa'),location:String(data.get('location')||'').trim(),comment:String(data.get('comment')||'').trim()});
+    if(error) throw error;
+    sendTasacion.textContent='Enviado ✓';
+  }catch(error){
+    console.warn(error);
+    sendTasacion.disabled=false;
+    sendTasacion.textContent='Solicitar tasación';
+    tasacionError.hidden=false;
+    tasacionError.textContent='No se pudo enviar. Probá de nuevo.';
+  }
+});
 
 function bindSliders(){document.querySelectorAll('.card-slider').forEach(slider=>{
   const track=slider.querySelector('.card-slides');

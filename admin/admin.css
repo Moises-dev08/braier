@@ -40,6 +40,11 @@ button, .file-btn { border: 0; border-radius: 14px; background: var(--petrol); c
 .photo-actions { display: flex; gap: 6px; flex-wrap: wrap; }
 .photo-actions button { padding: 8px 10px; }
 .file-btn input { display: none; }
+.appraisals { margin-bottom: 16px; }
+.appraisal + .appraisal { border-top: 1px solid var(--mist); }
+.appraisal { padding: 12px 4px; }
+.appraisal strong { display: block; color: var(--petrol); }
+.appraisal p { margin: 4px 0 0; color: #526068; font-size: 14px; }
 @media (max-width: 860px) {
   .layout { grid-template-columns: 1fr; }
   .editor { position: static; }
