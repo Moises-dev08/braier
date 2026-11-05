@@ -977,3 +977,17 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 h1.brand-title-single{margin:0}
 .tasacion-error{color:#9d2c2c;font-weight:650;margin:12px 0 0}
 .footer a{color:#143F53;font-weight:750;text-decoration:none}
+
+/* Barra de redes, debajo del encabezado. Un segundo clic suelta el filtro. */
+.top-social{display:flex;align-items:center;justify-content:center;gap:18px;min-height:64px;padding:10px 16px;background:#c5ccd1;border-bottom:1px solid #b0b8be}
+.top-social-link{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:12px;overflow:hidden;text-decoration:none;background:transparent}
+.top-social-link img{width:100%;height:100%;display:block;object-fit:cover}
+.top-social-link.is-youtube,.top-social-link.is-tiktok{background:#000;padding:5px;box-sizing:border-box}
+.top-social-link.is-youtube img,.top-social-link.is-tiktok img{object-fit:contain}
+.top-social-link.is-facebook img{border-radius:10px}
+.menu-panel button[data-set-op].active{background:rgba(20,63,83,.16);color:#102f3d;box-shadow:inset 0 0 0 1px rgba(20,63,83,.2)}
+@media(max-width:620px){
+  .top-social{gap:12px;min-height:56px;padding:8px 12px}
+  .top-social-link{width:36px;height:36px;flex-basis:36px;border-radius:10px}
+  .top-social-link.is-youtube,.top-social-link.is-tiktok{padding:4px}
+}

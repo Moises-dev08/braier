@@ -4,21 +4,22 @@ function setMenu(open){menuPanel.classList.toggle('open',open);menuBtn.setAttrib
 menuBtn.addEventListener('click',()=>setMenu(!menuPanel.classList.contains('open')));
 document.getElementById('menuClose').addEventListener('click',()=>setMenu(false));
 document.querySelectorAll('[data-close]').forEach(x=>x.addEventListener('click',()=>setMenu(false)));
-document.querySelectorAll('[data-set-op]').forEach(x=>x.addEventListener('click',()=>{activeOp=x.dataset.setOp;document.querySelectorAll('[data-op]').forEach(b=>b.classList.toggle('active',b.dataset.op===activeOp));updateStatus();filterCards();setMenu(false);document.getElementById('destacadas').scrollIntoView({behavior:'smooth'});}));
+document.querySelectorAll('[data-set-op]').forEach(x=>x.addEventListener('click',()=>{setActiveOp(x.dataset.setOp);setMenu(false);document.getElementById('destacadas').scrollIntoView({behavior:'smooth'});}));
 document.addEventListener('click',e=>{if(menuPanel.classList.contains('open')&&!menuPanel.contains(e.target)&&!menuBtn.contains(e.target))setMenu(false)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){setMenu(false);closeModal()}});
 
 let activeType='',activeOp='Ambas'; const typeSelect=document.getElementById('typeSelect');
-function selectType(type,scroll=false){activeType=type;typeSelect.value=type;document.querySelectorAll('.cat').forEach(c=>{const on=c.dataset.type===type;c.classList.toggle('active',on);c.setAttribute('aria-pressed',on)});filterCards();if(scroll)document.getElementById('destacadas').scrollIntoView({behavior:'smooth'})}
+function selectType(type,scroll=false){activeType=(type&&activeType===type)?'':type;typeSelect.value=activeType;document.querySelectorAll('.cat').forEach(c=>{const on=!!activeType&&c.dataset.type===activeType;c.classList.toggle('active',on);c.setAttribute('aria-pressed',on?'true':'false')});filterCards();if(scroll)document.getElementById('destacadas').scrollIntoView({behavior:'smooth'})}
 document.querySelectorAll('.cat').forEach(c=>c.addEventListener('click',()=>selectType(c.dataset.type,true)));
-typeSelect.addEventListener('change',()=>selectType(typeSelect.value,false));
-function setActiveOp(op){activeOp=op;document.querySelectorAll('[data-op]').forEach(x=>x.classList.toggle('active',x.dataset.op===activeOp));filterCards();}
+typeSelect.addEventListener('change',()=>{activeType='';selectType(typeSelect.value,false)});
+function syncOpButtons(){document.querySelectorAll('[data-op]').forEach(x=>{const on=x.dataset.op===activeOp;x.classList.toggle('active',on);x.setAttribute('aria-pressed',on?'true':'false')});document.querySelectorAll('[data-set-op]').forEach(x=>{const on=x.dataset.setOp===activeOp;x.classList.toggle('active',on);x.setAttribute('aria-pressed',on?'true':'false')})}
+function setActiveOp(op){activeOp=(op&&op!=='Ambas'&&activeOp===op)?'Ambas':(op||'Ambas');syncOpButtons();filterCards();}
 document.querySelectorAll('[data-op]').forEach(b=>b.addEventListener('click',()=>setActiveOp(b.dataset.op)));
 function updateStatus(){}
 function filterCards(){document.querySelectorAll('.card').forEach(card=>{const okType=!activeType||card.dataset.cardType===activeType;const okOp=activeOp==='Ambas'||!activeOp||card.dataset.cardOp.includes(activeOp);card.style.display=(okType&&okOp)?'':'none';});}
 document.getElementById('searchBtn').addEventListener('click',()=>{filterCards();const target=activeType?[...document.querySelectorAll('.property-type-group')].find(group=>group.dataset.propertyType===activeType&&group.style.display!=='none'):null;(target||document.getElementById('destacadas')).scrollIntoView({behavior:'smooth'})});
 setActiveOp('Ambas');
-const viewAll=document.getElementById('viewAll');if(viewAll)viewAll.addEventListener('click',()=>{activeType='';activeOp='Ambas';filterCards();window.scrollTo({top:document.getElementById('destacadas').offsetTop-60,behavior:'smooth'})});
+const viewAll=document.getElementById('viewAll');if(viewAll)viewAll.addEventListener('click',()=>{if(activeType)selectType(activeType,false);if(activeOp!=='Ambas')setActiveOp(activeOp);window.scrollTo({top:document.getElementById('destacadas').offsetTop-60,behavior:'smooth'})});
 const modal=document.getElementById('tasacionModal');
 const tasacionForm=document.getElementById('tasacionForm');
 const sendTasacion=document.getElementById('sendTasacion');
@@ -109,11 +110,15 @@ function bindActions(){document.querySelectorAll('.card-action').forEach(button=
 bindActions();
 function openProperty(id,card){
   if(!card)return;
-  const d=propertyDetails[id]||{title:card.querySelector('h3')?.textContent||'Propiedad',location:card.querySelector('.location')?.textContent||'',price:card.querySelector('.price')?.textContent||'Consultar',operation:'PROPIEDAD',contract:'',phone:'+54 3515-948375',description:'Consultanos para recibir más información sobre esta propiedad.',features:[...card.querySelectorAll('.meta span')].map(x=>x.textContent)};
+  const d=propertyDetails[id]||{title:card.querySelector('h3')?.textContent||'Propiedad',location:card.querySelector('.location')?.textContent||'',price:card.querySelector('.price')?.textContent||'Consultar',operation:'PROPIEDAD',contract:'',phone:'+54 351 719 1888',description:'Consultanos para recibir más información sobre esta propiedad.',features:[...card.querySelectorAll('.meta span')].map(x=>x.textContent)};
   const images=[...card.querySelectorAll('.card-slide img, .card-media > img')].map(img=>img.getAttribute('src')).filter(Boolean);
-  const wa=String(d.whatsapp||'543515948375').replace(/\D/g,'');
+  const businessWa='543517191888';
+  const previousWa='543515948375';
+  let wa=String(d.whatsapp||businessWa).replace(/\D/g,'');
+  if(wa===previousWa)wa=businessWa;
+  const phone=String(d.phone||'').replace(/\D/g,'')===previousWa?'+54 351 719 1888':(d.phone||'+54 351 719 1888');
   const waText=encodeURIComponent('Hola Braier Propiedades, quisiera consultar por: '+(d.title||'una propiedad'));
-  propertyModalContent.innerHTML='<div class="property-modal-grid"><div><div class="property-gallery-main"><img id="propertyMainImage" alt="" src="'+(images[0]||'')+'"></div><div class="property-thumbs">'+images.map((src,i)=>'<button class="property-thumb '+(i===0?'active':'')+'" type="button" data-image-index="'+i+'"><img alt="Foto '+(i+1)+'" src="'+src+'"></button>').join('')+'</div></div><div class="property-modal-copy"><span class="badge">'+esc(d.operation)+'</span><h2 id="propertyTitle">'+esc(d.title)+'</h2><p class="property-location">'+esc(d.location)+'</p><div class="property-price">'+esc(d.price)+'</div><p class="property-description">'+esc(d.description)+'</p><div class="property-features">'+(d.features||[]).map(f=>'<div class="property-feature">'+esc(f)+'</div>').join('')+'</div>'+(d.contract?'<div class="property-contract">'+esc(d.contract)+'</div>':'')+'<a class="property-contact" href="https://wa.me/'+wa+'?text='+waText+'" rel="noopener" target="_blank">Consultar por WhatsApp · '+esc(d.phone)+'</a></div></div>';
+  propertyModalContent.innerHTML='<div class="property-modal-grid"><div><div class="property-gallery-main"><img id="propertyMainImage" alt="" src="'+(images[0]||'')+'"></div><div class="property-thumbs">'+images.map((src,i)=>'<button class="property-thumb '+(i===0?'active':'')+'" type="button" data-image-index="'+i+'"><img alt="Foto '+(i+1)+'" src="'+src+'"></button>').join('')+'</div></div><div class="property-modal-copy"><span class="badge">'+esc(d.operation)+'</span><h2 id="propertyTitle">'+esc(d.title)+'</h2><p class="property-location">'+esc(d.location)+'</p><div class="property-price">'+esc(d.price)+'</div><p class="property-description">'+esc(d.description)+'</p><div class="property-features">'+(d.features||[]).map(f=>'<div class="property-feature">'+esc(f)+'</div>').join('')+'</div>'+(d.contract?'<div class="property-contract">'+esc(d.contract)+'</div>':'')+'<a class="property-contact" href="https://wa.me/'+wa+'?text='+waText+'" rel="noopener" target="_blank">Consultar por WhatsApp · '+esc(phone)+'</a></div></div>';
   propertyModal.classList.add('open');
   propertyModal.querySelectorAll('.property-thumb').forEach(thumb=>thumb.addEventListener('click',()=>{propertyModal.querySelector('#propertyMainImage').src=images[Number(thumb.dataset.imageIndex)];propertyModal.querySelectorAll('.property-thumb').forEach(x=>x.classList.toggle('active',x===thumb));}));
 }
@@ -129,7 +134,7 @@ if(ownerLeadForm)ownerLeadForm.addEventListener('submit',e=>{
   const form=e.currentTarget;
   const data=new FormData(form);
   const message=['Hola Braier Propiedades, quiero publicar una propiedad.','Nombre: '+data.get('ownerName'),'WhatsApp: '+data.get('ownerPhone'),'Necesito: '+data.get('ownerOperation'),'Tipo de propiedad: '+data.get('ownerType'),'Mensaje: '+(data.get('ownerMessage')||'Sin mensaje adicional')].join('\n');
-  window.open('https://wa.me/543515948375?text='+encodeURIComponent(message),'_blank','noopener');
+  window.open('https://wa.me/543517191888?text='+encodeURIComponent(message),'_blank','noopener');
   const submit=form.querySelector('button[type="submit"]');
   if(submit){const original=submit.innerHTML;submit.textContent='Consulta preparada ✓';setTimeout(()=>{submit.innerHTML=original},2200)}
 });

@@ -107,7 +107,7 @@ function openEditor(property) {
   document.getElementById("deleteProperty").hidden = !property;
   showError("editorError", "");
   const fields = ["card_title", "title", "operation", "property_type", "location", "price_label", "phone", "whatsapp", "note", "description", "contract"];
-  for (const name of fields) editor.elements[name].value = property?.[name] || (name === "phone" ? "+54 351 594 8375" : name === "whatsapp" ? WHATSAPP : name === "price_label" ? "Consultar precio" : "");
+  for (const name of fields) editor.elements[name].value = property?.[name] || (name === "phone" ? "+54 351 719 1888" : name === "whatsapp" ? WHATSAPP : name === "price_label" ? "Consultar precio" : "");
   editor.elements.badges.value = (property?.badges || []).join("\n");
   editor.elements.meta.value = (property?.meta || []).join("\n");
   editor.elements.features.value = (property?.features || []).join("\n");
@@ -252,7 +252,7 @@ editor.addEventListener("submit", async (event) => {
     property_type: data.get("property_type"),
     location: String(data.get("location") || "").trim(),
     price_label: String(data.get("price_label") || "Consultar precio").trim(),
-    phone: String(data.get("phone") || "+54 351 594 8375").trim(),
+    phone: String(data.get("phone") || "+54 351 719 1888").trim(),
     whatsapp: String(data.get("whatsapp") || WHATSAPP).replace(/\D/g, "") || WHATSAPP,
     note: String(data.get("note") || "").trim(),
     badges: lines(data.get("badges")),
